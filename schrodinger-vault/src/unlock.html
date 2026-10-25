@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schrödinger's Vault — Secrets Manager (Development)</title>
+    <script type="module" src="./theme.js" defer></script>
+    <script type="module" src="./unlock.js" defer></script>
+</head>
+
+<body>
+    <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle theme">☾</button>
+    <main id="page-unlock" class="page container">
+        <img src="assets/SV-logo-full-purple.svg" alt="Schrödinger Vault logo" class="logo">
+        <h1>Schrödinger's Vault</h1>
+        <p class="product-indicator"><strong>Secrets Manager</strong><span>Development vault · Test secrets only</span></p>
+        <h2 class="subtitle">Enter your master password</h2>
+        <form id="unlock-form">
+            <input id="password" type="password" placeholder="Master password" required />
+            <button id="unlock-btn" type="submit">Unlock</button>
+        </form>
+        <p id="unlock-msg"></p>
+    </main>
+</body>
+
+
+</html>

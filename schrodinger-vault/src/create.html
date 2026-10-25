@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schrödinger's Vault — Secrets Manager (Development)</title>
+    <script type="module" src="./theme.js" defer></script>
+    <script type="module" src="./create.js" defer></script>
+</head>
+
+<body>
+    <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle theme">☾</button>
+    <main class="page container">
+        <img src="assets/SV-logo-full-purple.svg" alt="Schrödinger Vault logo" class="logo">
+        <h1>Schrödinger's Vault</h1>
+        <p class="product-indicator"><strong>Secrets Manager</strong><span>Development vault · Test secrets only</span></p>
+        <h2 class="subtitle">Create a Master Password</h2>
+        <form id="passwordForm">
+            <input type="password" id="masterPassword" placeholder="Enter Master Password" required/>
+            <br />
+            <br />
+            <input type="password" id="confirmPassword" placeholder="Confirm Master Password" required/>
+            <fieldset class="kdf-options kdf-options-detailed" aria-labelledby="create-kdf-heading">
+                <div id="create-kdf-heading" class="kdf-heading">
+                    <span>Key derivation</span>
+                    <small>Choose how your master password protects the vault key.</small>
+                </div>
+                <label class="kdf-card">
+                    <input type="radio" name="kdf" value="argon2id" checked />
+                    <span class="kdf-card-body">
+                        <strong>Argon2id</strong>
+                        <small>Modern default with memory-hard password protection.</small>
+                    </span>
+                    <span class="kdf-check" aria-hidden="true">✓</span>
+                </label>
+                <label class="kdf-card">
+                    <input type="radio" name="kdf" value="pbkdf2-hmac-sha256" />
+                    <span class="kdf-card-body">
+                        <strong>PBKDF2-HMAC-SHA256</strong>
+                        <small>FIPS-aligned mode for compliance-focused environments.</small>
+                    </span>
+                    <span class="kdf-check" aria-hidden="true">✓</span>
+                </label>
+            </fieldset>
+            <button type="submit" id="createButton">Create Master Password</button>
+        </form>
+        <p id="create-msg"></p>
+    </main>
+</body>
+
+</html>

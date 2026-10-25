@@ -1,0 +1,30 @@
+.DS_Store
+
+# Build output and local tooling
+**/node_modules/
+**/target/
+**/dist/
+**/gen/schemas/
+.idea/
+.vscode/
+*.log
+
+# Never commit real credentials, vault data, or private authentication identities
+.env
+.env.*
+!.env.example
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.sk
+*.key
+*.pem
+*.p12
+*.pfx
+client-identity.json
+connection.json
+keystore/
+secrets/
