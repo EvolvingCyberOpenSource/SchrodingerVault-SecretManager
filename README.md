@@ -12,9 +12,9 @@ You do not need a cloud vault account. The vault and a connected application run
 
 ## Start here
 
-- [Download the source ZIP](https://github.com/EvolvingCyberOpenSource/SchrodingerVault-SecretManager/archive/refs/heads/main.zip). This contains source files, not a double-click installer.
-- **New to software setup?** Follow the illustrated [Getting Started guide](docs/GETTING_STARTED.md). It explains every step, including what to type in Terminal.
-- **Looking for a downloadable installer?** This guide does not yet identify a verified installer for this secret-manager version. A source-code ZIP is not an installer. Use the source instructions below, or wait for a tested release with installation instructions.
+- **Install on a Mac:** [Download the signed, Apple-notarized preview installer](https://github.com/EvolvingCyberOpenSource/SchrodingerVault-SecretManager/releases/download/v0.1.0-preview.1/Schrodinger-Secrets-0.1.0-universal.dmg), then follow the [Mac installation guide](docs/MAC_INSTALL.md). No Terminal, Node.js, or Rust is needed to install the packaged app.
+- **Preview status:** The installer and bundled app pass signature and notarization checks. Fresh-account installation and first-run testing on both Intel and Apple Silicon remain pending. Use test secrets first and read the [release notes](https://github.com/EvolvingCyberOpenSource/SchrodingerVault-SecretManager/releases/tag/v0.1.0-preview.1).
+- **Building from source?** [Download the source ZIP](https://github.com/EvolvingCyberOpenSource/SchrodingerVault-SecretManager/archive/refs/heads/main.zip) and follow the illustrated [Getting Started guide](docs/GETTING_STARTED.md). The source ZIP is not an installer.
 - **Connecting an application?** Read [How application access works](docs/GETTING_STARTED.md#connect-an-application) first, then the [local interface documentation](schrodinger-vault/docs/LOCAL_IPC.md).
 
 ## What the app does

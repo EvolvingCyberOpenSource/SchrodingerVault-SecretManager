@@ -1,12 +1,12 @@
 # Install the Mac preview
 
-This guide is for a packaged preview, not the source-code ZIP. Check the release notes before installing: a draft with notarization or launch testing still pending is not a verified end-user release.
+This guide is for the signed, Apple-notarized v0.1.0-preview.1 package, not the source-code ZIP. Signature, ticket, and disk-image integrity checks pass. Fresh-account installation and first-run testing on both architectures remain pending. Treat this as a research preview and use fake secrets first.
 
-You do not need Terminal, Node.js, Rust, or a weather API key to use a verified packaged app.
+You do not need Terminal, Node.js, Rust, or a weather API key to install this packaged app.
 
 ## 1. Download the correct file
 
-1. Visit the project's [Releases page](https://github.com/EvolvingCyberOpenSource/SchrodingerVault-SecretManager/releases). While the repository is private, sign in with a GitHub account that has access.
+1. Visit the project's [Mac preview release](https://github.com/EvolvingCyberOpenSource/SchrodingerVault-SecretManager/releases/tag/v0.1.0-preview.1). The download is public.
 2. Open the release marked as the Mac preview and read its status and limitations.
 3. Under **Assets**, download the file ending in **`.dmg`**. A universal Mac package contains both Intel and Apple Silicon code; check the release notes for which machines have actually been tested.
 4. Do not select **Source code (zip)** or **Source code (tar.gz)** for installation. Those downloads are for building the app yourself.
